@@ -1,0 +1,301 @@
+/* =======================================================
+   SECTION COLLECTION — VERSION PREMIUM & MODERNE
+======================================================= */
+
+.collection {
+    width: 100%;
+    padding: 7rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background: #fafafa;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* ------------------------ HEADER ------------------------ */
+
+.collection__header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.collection__subtitle {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: #A05A2C; /* Brun cuir */
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.collection__title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #111;
+}
+
+/* --------------------- CONTENT WRAPPER ------------------ */
+
+.collection__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* ------------------- CATEGORY GROUP --------------------- */
+
+.collection-category {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.collection-category__header {
+    text-align: left;
+}
+
+.collection-category__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* ------------------- PRODUCT GRID ----------------------- */
+
+.collection-category__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
+
+/* -------------------- PRODUCT CARD ---------------------- */
+
+.product-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.8rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+/* ---------- Image wrapper (effet premium) ---------- */
+
+.product-card__image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #f4f4f4;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-card__image {
+    width: 78%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card__image {
+    transform: scale(1.07);
+}
+
+/* ---------------- Text content ------------------ */
+
+.product-card__name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.product-card__rating {
+    font-size: 1rem;
+    color: #e3b23c; /* Or gold */
+}
+
+.product-card__price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* ------------------ FOOTER TEXT ----------------- */
+
+.collection__footer {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.collection__note {
+    font-size: 1.25rem;
+    color: #4A3426;
+    font-style: italic;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: "Cormorant Garamond", serif;
+    border-top: 1px solid rgba(60,40,30,0.2);
+    border-bottom: 1px solid rgba(60,40,30,0.2);
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 992px) {
+    .collection {
+        padding: 5rem 2rem;
+    }
+
+    .collection__title {
+        font-size: 2.4rem;
+    }
+
+    .collection-category__grid {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .collection {
+        padding: 4rem 1.5rem;
+    }
+
+    .collection__title {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        padding: 1.4rem;
+    }
+}
+
+/* =======================================================
+   COLLECTION — RESPONSIVE ULTRA OPTIMISÉ
+======================================================= */
+
+/* TABLETTES (<= 768px) */
+@media (max-width: 768px) {
+
+    .collection {
+        padding: 4.5rem 1.8rem;
+        gap: 3.5rem;
+    }
+
+    .collection__title {
+        font-size: 2.2rem;
+    }
+
+    .collection-category {
+        gap: 2rem;
+    }
+
+    .collection-category__title {
+        font-size: 1.6rem;
+    }
+
+    .collection-category__grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.8rem;
+    }
+
+    .product-card {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .product-card__image {
+        width: 82%;
+    }
+}
+
+/* SMARTPHONES (<= 540px) */
+@media (max-width: 540px) {
+
+    .collection {
+        padding: 4rem 1.3rem;
+        gap: 3rem;
+    }
+
+    .collection__subtitle {
+        font-size: 0.95rem;
+        letter-spacing: 3px;
+    }
+
+    .collection__title {
+        font-size: 1.85rem;
+        line-height: 1.25;
+    }
+
+    /* Passage en 2 colonnes plus petites */
+    .collection-category__grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1.4rem;
+    }
+
+    .product-card {
+        padding: 1.2rem;
+        border-radius: 14px;
+        gap: 0.9rem;
+    }
+
+    .product-card__name {
+        font-size: 1rem;
+    }
+
+    .product-card__price {
+        font-size: 1.05rem;
+    }
+}
+
+/* PETITS TÉLÉPHONES (<= 420px) */
+@media (max-width: 420px) {
+
+    .collection {
+        padding: 3.5rem 1rem;
+    }
+
+    .collection__title {
+        font-size: 1.65rem;
+    }
+
+    /* Une seule colonne pour maximiser la lisibilité */
+    .collection-category__grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .product-card {
+        padding: 1.1rem;
+    }
+
+    .product-card__image {
+        width: 88%;
+    }
+
+    .collection__note {
+        font-size: 1.1rem;
+        padding: 15px 0;
+    }
+}
+

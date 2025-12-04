@@ -1,0 +1,269 @@
+/* =========================================
+   SECTION BEST SELLER — PREMIUM DESIGN
+========================================= */
+
+.best-seller {
+    width: 100%;
+    padding: 7rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LIGHT GRADIENT GLOW BEHIND CONTENT */
+.best-seller::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(160,90,44,0.10) 0%, transparent 70%);
+    filter: blur(90px);
+    z-index: -1;
+}
+
+/* ======================
+   HEADER
+====================== */
+
+.best-seller-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-subtitle {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    color: #A05A2C; /* Brun cuir */
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.best-seller-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+/* ======================
+   CONTENT
+====================== */
+
+.best-seller-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+/* IMAGE BLOCK */
+.best-seller-image {
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    background: #fdfdfd;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid rgba(160, 90, 44, 0.25);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.best-seller-image:hover {
+    transform: scale(1.04) translateY(-5px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* PRODUCT NAME */
+.best-seller-product-name {
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: -0.3px;
+    font-family: 'Cinzel', serif;
+}
+
+/* PRODUCT RATING */
+.best-seller-rating {
+    font-size: 1.15rem;
+    color: #e3b23c; /* Or gold */
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+/* PRODUCT PRICE */
+.best-seller-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* ======================
+   FOOTER
+====================== */
+
+.best-seller-footer {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.best-seller-note {
+    font-size: 1.25rem;
+    color: #4A3426;
+    font-style: italic;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-family: "Cormorant Garamond", serif;
+    border-top: 1px solid rgba(60,40,30,0.2);
+    border-bottom: 1px solid rgba(60,40,30,0.2);
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media (max-width: 900px) {
+    .best-seller {
+        padding: 5rem 2rem;
+        gap: 3.5rem;
+    }
+
+    .best-seller-image {
+        width: 80%;
+        max-width: 270px;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+}
+
+
+/* =======================================================
+   BEST SELLER — RESPONSIVE PREMIUM
+======================================================= */
+
+/* TABLETTES (<= 768px) */
+@media (max-width: 768px) {
+
+    .best-seller {
+        padding: 4.5rem 1.8rem;
+        gap: 3.2rem;
+    }
+
+    .best-seller-title {
+        font-size: 2.1rem;
+        line-height: 1.25;
+    }
+
+    .best-seller-image {
+        width: 75%;
+        max-width: 250px;
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .best-seller-product-name {
+        font-size: 1.45rem;
+    }
+
+    .best-seller-price {
+        font-size: 1.5rem;
+    }
+
+    .best-seller-note {
+        font-size: 1.15rem;
+        padding: 15px 0;
+    }
+}
+
+/* SMARTPHONES (<= 600px) */
+@media (max-width: 600px) {
+
+    .best-seller {
+        padding: 4rem 1.4rem;
+        gap: 2.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+
+    .best-seller-title {
+        font-size: 1.85rem;
+    }
+
+    .best-seller-image {
+        width: 95%;
+        max-width: 240px;
+        padding: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .best-seller-product-name {
+        font-size: 1.3rem;
+    }
+
+    .best-seller-rating {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .best-seller-price {
+        font-size: 1.35rem;
+    }
+
+    .best-seller-note {
+        font-size: 1.1rem;
+    }
+}
+
+/* PETITS TÉLÉPHONES (<= 420px) */
+@media (max-width: 420px) {
+
+    .best-seller {
+        padding: 3.5rem 1rem;
+        gap: 2.5rem;
+    }
+
+    .best-seller-title {
+        font-size: 1.65rem;
+    }
+
+    .best-seller-image {
+        width: 100%;
+        max-width: 220px;
+        padding: 12px;
+    }
+
+    .best-seller-product-name {
+        font-size: 1.2rem;
+    }
+
+    .best-seller-price {
+        font-size: 1.25rem;
+    }
+
+    .best-seller-note {
+        font-size: 1rem;
+    }
+}
+
+
+
