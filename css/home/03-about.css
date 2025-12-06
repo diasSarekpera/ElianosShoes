@@ -171,7 +171,8 @@
 
     .about-features {
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -286,17 +287,6 @@
     .about__description-wrapper {
         max-width: 100%;
         text-align: center;
-    }
-
-    .about-features {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .about-feature {
-        justify-content: center;
     }
 
     .about__image-wrapper {
