@@ -1,0 +1,23 @@
+/* ============================
+   ANIMATIONS RÉVÉLATION — ULTRA PREMIUM
+============================ */
+
+/* État initial (avant apparition) */
+.reveal-section,
+.reveal-header,
+.reveal-card {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    transition: opacity .7s ease, transform .7s cubic-bezier(.21, .61, .35, 1);
+}
+
+/* Quand l’élément est visible */
+.revealed {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Apparition en cascade pour les cartes */
+.reveal-card:nth-child(1) { transition-delay: .1s; }
+.reveal-card:nth-child(2) { transition-delay: .22s; }
+.reveal-card:nth-child(3) { transition-delay: .34s; }

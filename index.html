@@ -137,10 +137,10 @@
 
 
         <!-- SECTION KEYS -->
-        <section class="stats" id="chiffres-cles" role="region" aria-labelledby="stats-title">
+        <section class="stats reveal-section" id="chiffres-cles" role="region" aria-labelledby="stats-title">
 
             <!-- SECTION HEADER -->
-            <header class="stats__header">
+            <header class="stats__header reveal-header">
                 <p class="stats__subtitle"><span>—</span> Nos performances <span>—</span></p>
                 <h2 class="stats__title" id="stats-title">
                     Des chiffres qui parlent d'eux-mêmes
@@ -154,7 +154,7 @@
                     <!-- STAT 1 -->
                     <article class="stat-card" role="listitem">
                         <div class="stat-card__value">
-                            <span class="stat-card__number">12+</span>
+                            <span class="stat-card__number" data-target="12" data-suffix="+">12</span>
                             <span class="stat-card__unit">ans</span>
                         </div>
                         <p class="stat-card__description">
@@ -165,7 +165,7 @@
                     <!-- STAT 2 -->
                     <article class="stat-card" role="listitem">
                         <div class="stat-card__value">
-                            <span class="stat-card__number">3500+</span>
+                            <span class="stat-card__number" data-target="3500" data-suffix="+">3500</span>
                             <span class="stat-card__unit">clients</span>
                         </div>
                         <p class="stat-card__description">
@@ -176,7 +176,7 @@
                     <!-- STAT 3 -->
                     <article class="stat-card" role="listitem">
                         <div class="stat-card__value">
-                            <span class="stat-card__number">120+</span>
+                            <span class="stat-card__number" data-target="120" data-suffix="+">120</span>
                             <span class="stat-card__unit">modèles</span>
                         </div>
                         <p class="stat-card__description">
@@ -187,7 +187,7 @@
                     <!-- STAT 4 -->
                     <article class="stat-card" role="listitem">
                         <div class="stat-card__value">
-                            <span class="stat-card__number">98%</span>
+                            <span class="stat-card__number" data-target="98" data-suffix="%">98</span>
                             <span class="stat-card__unit">de satisfaction</span>
                         </div>
                         <p class="stat-card__description">
@@ -199,7 +199,7 @@
             </div>
         
             <!-- SECTION FOOTER -->
-            <footer class="stats__footer">
+            <footer class="stats__footer reveal-card ">
                 <p class="stats__note">
                     « Derrière chaque pourcentage, il y a une main, un geste, un savoir-faire. »
                 </p>
@@ -209,13 +209,13 @@
 
 
         <!-- SECTION ABOUT-->
-        <section class="about" id="about" role="region" aria-labelledby="about-title">
+        <section class="about reveal-section" id="about" role="region" aria-labelledby="about-title">
 
             <!-- TEXT BLOCK -->
             <div class="about__content">
         
                 <!-- HEADER -->
-                <header class="about__header">
+                <header class="about__header reveal-header">
                     <p class="about__subtitle"><span>—</span>A propos<span>—</span></p>
                     <h2 class="about__title" id="about-title">
                         L'élégance du cuir façonnée à la main
@@ -223,7 +223,7 @@
                 </header>
         
                 <!-- DESCRIPTION -->
-                <div class="about__description-wrapper">
+                <div class="about__description-wrapper reveal-card ">
                     <p class="about__description">
                         Eliano Shoes est une marque spécialisée dans la fabrication de tappettes en cuir de qualité, pensées pour offrir un confort naturel, une longue durée de vie et un style intemporel. Chaque modèle est réalisé avec soin, en respectant les traditions artisanales du cuir, pour vous accompagner au quotidien avec élégance et confiance.
                     </p>
@@ -231,17 +231,17 @@
                     <!-- FEATURES -->
                     <ul class="about-features" role="list">
                         
-                        <li class="about-feature" role="listitem">
+                        <li class="about-feature reveal-card " role="listitem">
                             <i class="fa-solid fa-leaf" aria-hidden="true"></i>
                             <span class="about-feature__text">Cuir</span>
                         </li>
                         
-                        <li class="about-feature" role="listitem">
+                        <li class="about-feature reveal-card " role="listitem">
                             <i class="fa-solid fa-hammer" aria-hidden="true"></i>
                             <span class="about-feature__text">Artisanat</span>
                         </li>
                         
-                        <li class="about-feature" role="listitem">
+                        <li class="about-feature reveal-card " role="listitem">
                             <i class="fa-solid fa-gem" aria-hidden="true"></i>
                             <span class="about-feature__text">Prestige</span>
                         </li>
@@ -251,7 +251,7 @@
             </div>
 
             <!-- IMAGE BLOCK -->
-            <figure class="about__image-wrapper">
+            <figure class="about__image-wrapper reveal-card ">
                 <img
                     src="./assets/image/about_image.png"
                     alt="Chaussure artisanale en cuir premium par Eliano Shoes"
@@ -260,7 +260,7 @@
             </figure>
         
             <!-- FOOTER -->
-            <footer class="about__footer">
+            <footer class="about__footer reveal-card ">
                 <blockquote class="about__quote">
                     « Créer une chaussure, c'est sculpter le temps : rien ne se perd, tout se perfectionne. »
                 </blockquote>
@@ -270,10 +270,10 @@
 
 
         <!-- SECTION COLLECTION -->
-        <section class="collection" id="collection" role="region" aria-labelledby="collection-title">
+        <section class="collection " id="collection" role="region" aria-labelledby="collection-title">
 
             <!-- HEADER -->
-            <header class="collection__header">
+            <header class="collection__header reveal-header">
                 <p class="collection__subtitle"><span>—</span>La Collection<span>—</span></p>
                 <h2 class="collection__title" id="collection-title">
                     Sélection Exclusive
@@ -316,7 +316,8 @@
                         </article>
     
                         <article
-                            class="product-card" aria-hidden="true"
+                            class="product-card"
+                            aria-hidden="true"
                             data-name="Prestige Plus"
                             data-image="https://elianoshoes.onrender.com/assets/image/Shoes/2.jpeg"
                             data-price="14 000 FCFA"
@@ -1082,7 +1083,7 @@
 
 
         <!-- SECTION BEST SELLER -->
-        <section class="best-seller" id="best-seller" role="region" aria-labelledby="best-seller-title">
+        <section class="best-seller reveal-section" id="best-seller" role="region" aria-labelledby="best-seller-title">
 
             <!-- Header -->
             <header class="best-seller-header reveal-header">
@@ -1091,7 +1092,7 @@
             </header>
 
             <!-- Content -->
-            <div class="best-seller-content">
+            <div class="best-seller-content reveal-card">
 
                 <img 
                     src="./assets/image/Shoes/4.jpeg" 
@@ -1207,14 +1208,23 @@
 
             <!-- Bottom Line -->
             <p class="footer-bottom">
-                © 2025 Eliano Shoes — Tous droits réservés.
+                <span>
+                    Développer par <a href="https://dskportfolio.onrender.com" target="_blank" style="color: #ffffff;">Dias SARE KPERA</a>
+                </span>
+                <span>
+                    © 2025 Eliano Shoes - Tous droits réservés.
+                </span>
+                <span>
+                    « Marcher simple, marcher noble. »
+                </span>
             </p>
-
         </footer>
 
 
         <script src="./js/overlay-menu.js"></script>
         <script src="./js/wa-message.js"></script>
+        <script src="./js/reveal.js"></script>
+        <script src="./js/keys.js"></script>
     </body>
 </html>
 
