@@ -217,7 +217,7 @@ h1, h2, h3, h4 {
 }
 
 .hero__burger span {
-    height: 2px;
+    height: 1.5px;
     background: #eeeae1;
     transition: width 0.35s ease, transform 0.35s ease, opacity 0.35s ease;
 }
@@ -226,15 +226,15 @@ h1, h2, h3, h4 {
    rendu plus raffiné et moins "générique" que le triple-trait classique,
    en cohérence avec le style éditorial/artisanal du reste du site. */
 .hero__burger span:nth-child(1) {
-    width: 26px;
+    width: 30px;
 }
 
 .hero__burger span:nth-child(2) {
-    width: 19px;
+    width: 22px;
 }
 
 .hero__burger span:nth-child(3) {
-    width: 13px;
+    width: 15px;
 }
 
 /* Au survol : les barres s'alignent en pleine largeur, comme un petit
@@ -244,7 +244,7 @@ h1, h2, h3, h4 {
    le menu refermé. */
 @media (hover: hover) and (pointer: fine) {
     .hero__burger:hover span {
-        width: 26px;
+        width: 30px;
     }
 }
 
@@ -318,17 +318,17 @@ body.nav-open {
 /* -------------------------------------------------- */
 
 .hero__burger.open span:nth-child(1) {
-    width: 26px;
+    width: 30px;
     transform: translateY(7px) rotate(45deg);
 }
 
 .hero__burger.open span:nth-child(2) {
-    width: 26px;
+    width: 30px;
     opacity: 0;
 }
 
 .hero__burger.open span:nth-child(3) {
-    width: 26px;
+    width: 30px;
     transform: translateY(-7px) rotate(-45deg);
 }
 
