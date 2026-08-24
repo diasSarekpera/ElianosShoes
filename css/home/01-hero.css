@@ -209,6 +209,7 @@ h1, h2, h3, h4 {
 .hero__burger {
     display: none;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
     border: none;
     background: none;
@@ -221,27 +222,30 @@ h1, h2, h3, h4 {
     transition: width 0.35s ease, transform 0.35s ease, opacity 0.35s ease;
 }
 
-/* Barres de largeurs dégressives : rendu plus raffiné et moins
-   "générique" que le triple-trait classique, en cohérence avec le
-   style éditorial/artisanal du reste du site. */
+/* Barres de largeurs dégressives, centrées les unes sous les autres :
+   rendu plus raffiné et moins "générique" que le triple-trait classique,
+   en cohérence avec le style éditorial/artisanal du reste du site. */
 .hero__burger span:nth-child(1) {
     width: 26px;
 }
 
 .hero__burger span:nth-child(2) {
     width: 19px;
-    align-self: flex-end;
 }
 
 .hero__burger span:nth-child(3) {
     width: 13px;
-    align-self: flex-end;
 }
 
-/* Au survol : les barres s'alignent en pleine largeur, comme un
-   petit "réveil" avant l'ouverture du menu. */
-.hero__burger:hover span {
-    width: 26px;
+/* Au survol : les barres s'alignent en pleine largeur, comme un petit
+   "réveil" avant l'ouverture du menu. Restreint aux appareils avec un
+   vrai pointeur (souris) : sur tactile, :hover reste "collé" après un
+   tap et empêchait les barres de revenir à leur état normal une fois
+   le menu refermé. */
+@media (hover: hover) and (pointer: fine) {
+    .hero__burger:hover span {
+        width: 26px;
+    }
 }
 
 /* -------------------------------------------------- */
@@ -325,7 +329,6 @@ body.nav-open {
 
 .hero__burger.open span:nth-child(3) {
     width: 26px;
-    align-self: flex-end;
     transform: translateY(-7px) rotate(-45deg);
 }
 
