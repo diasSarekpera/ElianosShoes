@@ -386,6 +386,29 @@ body.nav-open {
     background: linear-gradient(135deg, #6E140B 0%, #A83B1D 55%, #C97A3A 100%);
     color: #fff;
     box-shadow: 0 14px 32px -12px rgba(110, 20, 11, 0.55);
+    animation: btnPulse 2.2s infinite;
+}
+
+/* Onde de pulsation continue, même principe que le bouton WhatsApp
+   (voir whatsapp-icon.css) mais via box-shadow pour rester compatible
+   avec un bouton rectangulaire (une pseudo-élément ::after scale()
+   aurait des coins visibles au lieu d'un anneau propre). */
+@keyframes btnPulse {
+    0% {
+        box-shadow: 0 14px 32px -12px rgba(110, 20, 11, 0.55), 0 0 0 0 rgba(201, 122, 58, 0.55);
+    }
+    70% {
+        box-shadow: 0 14px 32px -12px rgba(110, 20, 11, 0.55), 0 0 0 16px rgba(201, 122, 58, 0);
+    }
+    100% {
+        box-shadow: 0 14px 32px -12px rgba(110, 20, 11, 0.55), 0 0 0 0 rgba(201, 122, 58, 0);
+    }
+}
+
+/* On coupe la pulsation au survol pour laisser la place au reflet
+   et à l'ombre plus marquée définis par .btn--primary:hover. */
+.btn--primary:hover {
+    animation-play-state: paused;
 }
 
 /* Reflet lumineux qui balaie le bouton au survol, comme un cuir verni */
@@ -573,7 +596,7 @@ body.nav-open {
 
     .hero__image img {
         max-width: 460px;
-        max-height: 44dvh;
+        max-height: 44svh;
     }
 }
 
@@ -594,7 +617,7 @@ body.nav-open {
 
     .hero__image img {
         max-width: 380px;
-        max-height: 40dvh;
+        max-height: 40svh;
     }
 }
 
@@ -621,7 +644,7 @@ body.nav-open {
 
     .hero__image img {
         max-width: 300px;
-        max-height: 36dvh;
+        max-height: 36svh;
     }
 
     .btn {
@@ -661,7 +684,7 @@ body.nav-open {
 
     .hero__image img {
         max-width: 240px;
-        max-height: 32dvh;
+        max-height: 32svh;
     }
 
     .btn {
