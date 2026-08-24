@@ -375,27 +375,46 @@ body.nav-open {
     letter-spacing: 1px;
     text-decoration: none;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Dégradé "cuir" inspiré du mocassin : oxblood profond -> cognac vif,
+   plus premium que le rouge plein (associé au danger en UI) et en
+   cohérence avec la teinte de la chaussure du hero. */
 .btn--primary {
-    background: #e51710;
+    background: linear-gradient(135deg, #6E140B 0%, #A83B1D 55%, #C97A3A 100%);
     color: #fff;
-    box-shadow: 0 14px 32px -12px rgba(229, 23, 16, 0.55);
+    box-shadow: 0 14px 32px -12px rgba(110, 20, 11, 0.55);
+}
+
+/* Reflet lumineux qui balaie le bouton au survol, comme un cuir verni */
+.btn--primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.28) 45%, transparent 60%);
+    transform: translateX(-130%);
+    transition: transform 0.6s ease;
+}
+
+.btn--primary:hover::before {
+    transform: translateX(130%);
 }
 
 .btn--primary:hover {
-    background: #ff2c24;
+    background: linear-gradient(135deg, #7C1A10 0%, #BF4A24 55%, #D98A48 100%);
     transform: translateY(-2px);
-    box-shadow: 0 18px 38px -12px rgba(229, 23, 16, 0.65);
+    box-shadow: 0 18px 38px -12px rgba(110, 20, 11, 0.65);
 }
 
 .btn--secondary {
-    border: 1px solid #e51710;
-    color: #e51710;
+    border: 1px solid #A05A2C;
+    color: #eeeae1;
 }
 
 .btn--secondary:hover {
-    background: rgba(229, 23, 16, 0.12);
+    background: rgba(160, 90, 44, 0.15);
 }
 
 /* Image */
@@ -614,19 +633,8 @@ body.nav-open {
         transition: all 0.3s ease;
     }
     
-    .btn--primary {
-        background: #e51710;
-        color: #fff;
-        box-shadow: 0 12px 26px -10px rgba(229, 23, 16, 0.55);
-    }
-    
     .btn--primary:hover {
-        background: #ff2c24;
-    }
-    
-    .btn--secondary {
-        border: 1px solid #e51710;
-        color: #e51710;
+        transform: none;
     }
 }
 
