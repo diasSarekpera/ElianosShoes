@@ -216,10 +216,32 @@ h1, h2, h3, h4 {
 }
 
 .hero__burger span {
-    width: 26px;
     height: 2px;
     background: #eeeae1;
-    transition: 0.35s ease;
+    transition: width 0.35s ease, transform 0.35s ease, opacity 0.35s ease;
+}
+
+/* Barres de largeurs dégressives : rendu plus raffiné et moins
+   "générique" que le triple-trait classique, en cohérence avec le
+   style éditorial/artisanal du reste du site. */
+.hero__burger span:nth-child(1) {
+    width: 26px;
+}
+
+.hero__burger span:nth-child(2) {
+    width: 19px;
+    align-self: flex-end;
+}
+
+.hero__burger span:nth-child(3) {
+    width: 13px;
+    align-self: flex-end;
+}
+
+/* Au survol : les barres s'alignent en pleine largeur, comme un
+   petit "réveil" avant l'ouverture du menu. */
+.hero__burger:hover span {
+    width: 26px;
 }
 
 /* -------------------------------------------------- */
@@ -292,14 +314,18 @@ body.nav-open {
 /* -------------------------------------------------- */
 
 .hero__burger.open span:nth-child(1) {
+    width: 26px;
     transform: translateY(7px) rotate(45deg);
 }
 
 .hero__burger.open span:nth-child(2) {
+    width: 26px;
     opacity: 0;
 }
 
 .hero__burger.open span:nth-child(3) {
+    width: 26px;
+    align-self: flex-end;
     transform: translateY(-7px) rotate(-45deg);
 }
 

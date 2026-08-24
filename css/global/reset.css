@@ -12,6 +12,27 @@
   padding: 0;
 }
 
+/* 1bis. Défilement fluide vers les ancres (#collection, #best-seller...)
+   au lieu du saut brutal par défaut. On respecte les utilisateurs qui
+   ont désactivé les animations dans leur système (prefers-reduced-motion). */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Décalage d'arrivée pour toutes les sections ciblées par une ancre
+   (#collection, #best-seller...) : sans ça, le défilement fluide amène
+   le haut de la section pile sous le header fixe, qui la recouvre
+   partiellement. --header-h est calculée en JS (fixed-header.js). */
+section[id] {
+  scroll-margin-top: var(--header-h, 90px);
+}
+
 /* 2. Suppression des marges par défaut sur le body */
 body {
   margin: 0;
