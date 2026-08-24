@@ -1,0 +1,118 @@
+/* =======================================================
+   PAGE BANNER - En-tête compact de la page Boutique
+   Reprend l'identité visuelle du hero (même damier cuir,
+   même header/nav) mais en version réduite.
+======================================================= */
+
+.hero--shop {
+    min-height: 48vh;
+    padding-bottom: 4rem;
+}
+
+.page-banner__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.1rem;
+    margin-top: 2.5rem;
+}
+
+.page-banner__breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #A05A2C;
+}
+
+.page-banner__breadcrumb a {
+    color: #eeeae1;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.page-banner__breadcrumb a:hover {
+    opacity: 1;
+}
+
+.page-banner__breadcrumb-sep {
+    opacity: 0.5;
+}
+
+.page-banner__breadcrumb-current {
+    color: #f1ede6;
+    opacity: 1;
+    font-weight: 600;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+.page-banner__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #f1ede6;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65), 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-banner__subtitle {
+    max-width: 560px;
+    color: rgba(238, 234, 225, 0.75);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 992px) {
+    .hero--shop {
+        min-height: 42vh;
+    }
+
+    .page-banner__title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero--shop {
+        min-height: 38vh;
+        padding-bottom: 3rem;
+    }
+
+    .page-banner__title {
+        font-size: 2.1rem;
+    }
+
+    .page-banner__subtitle {
+        font-size: 0.92rem;
+        padding: 0 0.5rem;
+    }
+
+    .page-banner__breadcrumb {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* ------------- Grille produits de la boutique ------------- */
+/* Section réutilisant .collection / .collection-category__grid,
+   sans le bandeau titre + lien (déjà présent dans le page-banner) */
+
+.boutique-shop {
+    padding-top: 5.5rem;
+}
+
+@media (max-width: 768px) {
+    .boutique-shop {
+        padding-top: 4rem;
+    }
+}

@@ -1,0 +1,96 @@
+/* =========================================
+   SECTION AVANTAGES - BARRE D'ENGAGEMENTS
+========================================= */
+
+.avantages {
+    width: 100%;
+    padding: 6rem 3rem;
+    background: #F5F1EB;
+}
+
+.avantages__grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.avantage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0 2rem;
+    border-left: 1px solid rgba(46, 27, 18, 0.14);
+}
+
+.avantage:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+.avantage__icon {
+    font-size: 1.3rem;
+    color: #A05A2C;
+    margin-bottom: 0.3rem;
+}
+
+.avantage__title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #2E1B12;
+}
+
+.avantage__text {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: rgba(46, 27, 18, 0.6);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+    .avantages {
+        padding: 3rem 2.5rem;
+    }
+
+    .avantages__grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2.5rem;
+    }
+
+    .avantage:nth-child(odd) {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .avantage:nth-child(even) {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .avantages {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .avantages__grid {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .avantage,
+    .avantage:nth-child(odd),
+    .avantage:nth-child(even) {
+        padding: 1.6rem 0 0 0;
+        border-left: none;
+        border-top: 1px solid rgba(46, 27, 18, 0.14);
+    }
+
+    .avantage:first-child {
+        padding-top: 0;
+        border-top: none;
+    }
+}

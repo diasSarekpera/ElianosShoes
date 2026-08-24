@@ -1,0 +1,3337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Charset -->
+        <meta charset="UTF-8">
+
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO -->
+        <title>Boutique - Eliano Shoes | Toute notre collection de chaussures en cuir</title>
+        <meta name="description" content="Découvrez toute la boutique Eliano Shoes : chaussures en cuir premium, fabrication artisanale, élégance et confort. Commandez en ligne via WhatsApp.">
+
+        <!-- FAVICON -->
+        <link rel="icon" type="image/png" href="./assets/icons/favicon/favicon.ico">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome (icônes) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- Stylesheet principal -->
+        <link rel="stylesheet" href="./css/boutique/main.css">
+
+        <!-- Open Graph (réseaux sociaux) -->
+        <meta property="og:title" content="Boutique - Eliano Shoes">
+        <meta property="og:description" content="Toute la collection de chaussures en cuir premium Eliano Shoes.">
+        <meta property="og:image" content="./assets/icons/logo.jpeg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://elianoshoes.onrender.com/boutique.html">
+
+        <!-- Couleur principale mobile -->
+        <meta name="theme-color" content="#000000">
+    </head>
+    <body>
+
+        <!-- HEADER (hors de .hero pour ne pas être piégé dans son contexte d'empilement) -->
+        <header class="hero__header">
+            <div class="hero__logo">
+                <a href="index.html#hero" class="hero__brand">
+                    <svg class="brand-needle" viewBox="0 0 26 58" width="20" height="44" aria-hidden="true" focusable="false">
+                        <rect x="11.9" y="5" width="2.2" height="39" rx="1.1" fill="#eeeae1"/>
+                        <path d="M11.9 42 L14.1 42 L13 56 Z" fill="#eeeae1"/>
+                        <ellipse cx="13" cy="10.5" rx="0.9" ry="2.3" fill="none" stroke="#3a2416" stroke-width="1"/>
+                        <path class="brand-needle__thread" d="M11.9 10.8 C5 12.5 2.2 20 6.5 25.5 C10.8 31 2 35 3 42.5 C3.7 48 9 50.5 13 48" fill="none" stroke="#A05A2C" stroke-width="1.6" stroke-linecap="round"/>
+                        <circle cx="13" cy="48" r="1.4" fill="#A05A2C"/>
+                    </svg>
+                    <span>Eliano Shoes</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hero__nav" aria-label="Navigation principale">
+                <ul class="hero__menu">
+                    <li><a href="index.html#hero">Accueil</a></li>
+                    <li><a href="index.html#collection">Collection</a></li>
+                    <li><a href="boutique.html" aria-current="page">Boutique</a></li>
+                    <li><a href="index.html#best-seller">Meilleure vente</a></li>
+                    <li><a href="index.html#temoignages">Témoignages</a></li>
+                    <li><a href="https://wa.me/22955749137" target="_blank">Écrivez-nous</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Links -->
+            <ul class="hero__socials" aria-label="Réseaux sociaux">
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="hero__burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <!-- MOBILE NAV (hors de .hero également) -->
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Menu mobile">
+            <ul class="mobile-nav__menu">
+                <li><a href="index.html#hero">Accueil</a></li>
+                <li><a href="index.html#collection">Collection</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="index.html#best-seller">Meilleure vente</a></li>
+                <li><a href="index.html#temoignages">Témoignages</a></li>
+                <li><a href="https://wa.me/22955749137" target="_blank">Écrivez-nous</a></li>
+            </ul>
+            <!-- Social Links -->
+            <ul class="hero__socials" aria-label="Réseaux sociaux">
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- BANNIÈRE / EN-TÊTE DE PAGE -->
+        <section class="hero hero--shop" id="hero" role="region" aria-labelledby="page-banner-title">
+
+            <!-- CONTENU DE LA BANNIÈRE -->
+            <div class="page-banner__content">
+                <p class="page-banner__breadcrumb">
+                    <a href="index.html#hero">Accueil</a>
+                    <span class="page-banner__breadcrumb-sep">/</span>
+                    <span class="page-banner__breadcrumb-current" aria-current="page">Boutique</span>
+                </p>
+
+                <h1 class="page-banner__title" id="page-banner-title">La Boutique</h1>
+
+                <p class="page-banner__subtitle">
+                    Toute notre collection de chaussures en cuir premium, réunie ici.
+                    Choisissez votre modèle et commandez en un clic.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- GRILLE PRODUITS (identique à la page d'accueil) -->
+        <section class="collection boutique-shop" id="produits" role="region" aria-label="Tous les produits">
+            <div class="collection__content">
+                <section class="collection-category" aria-label="Produits">
+                    <div class="collection-category__grid" role="list">
+
+                        <!-- CARD 1 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Milano - Cuir Noir"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/1.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/1.jpeg"
+                                    alt="Chaussure en cuir modèle Milano - Cuir Noir"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Milano - Cuir Noir</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 2 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Florence - Cuir Caramel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/2.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/2.jpeg"
+                                    alt="Chaussure en cuir modèle Florence - Cuir Caramel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Florence - Cuir Caramel</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 3 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Toscane - Cuir Marron"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/3.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/3.jpeg"
+                                    alt="Chaussure en cuir modèle Toscane - Cuir Marron"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Toscane - Cuir Marron</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 4 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Sienne - Cuir Châtaigne"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/4.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/4.jpeg"
+                                    alt="Chaussure en cuir modèle Sienne - Cuir Châtaigne"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Sienne - Cuir Châtaigne</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 5 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Vérone - Cuir Bronze"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/5.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/5.jpeg"
+                                    alt="Chaussure en cuir modèle Vérone - Cuir Bronze"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Vérone - Cuir Bronze</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 6 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Capri - Cuir Miel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/6.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/6.jpeg"
+                                    alt="Chaussure en cuir modèle Capri - Cuir Miel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Capri - Cuir Miel</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 7 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Portofino - Cuir Cuivre"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/7.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/7.jpeg"
+                                    alt="Chaussure en cuir modèle Portofino - Cuir Cuivre"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Portofino - Cuir Cuivre</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 8 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Amalfi - Cuir Ivoire"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/8.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/8.jpeg"
+                                    alt="Chaussure en cuir modèle Amalfi - Cuir Ivoire"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Amalfi - Cuir Ivoire</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 9 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Côme - Cuir Tabac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/9.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/9.jpeg"
+                                    alt="Chaussure en cuir modèle Côme - Cuir Tabac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Côme - Cuir Tabac</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 10 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Venise - Cuir Gris Perle"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/10.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/10.jpeg"
+                                    alt="Chaussure en cuir modèle Venise - Cuir Gris Perle"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Venise - Cuir Gris Perle</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 11 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Naples - Cuir Acajou"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/11.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/11.jpeg"
+                                    alt="Chaussure en cuir modèle Naples - Cuir Acajou"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Naples - Cuir Acajou</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 12 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Palerme - Cuir Camel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/12.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/12.jpeg"
+                                    alt="Chaussure en cuir modèle Palerme - Cuir Camel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Palerme - Cuir Camel</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 13 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Turin - Cuir Sable"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/13.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/13.jpeg"
+                                    alt="Chaussure en cuir modèle Turin - Cuir Sable"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Turin - Cuir Sable</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 14 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Bologne - Cuir Ébène"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/14.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/14.jpeg"
+                                    alt="Chaussure en cuir modèle Bologne - Cuir Ébène"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Bologne - Cuir Ébène</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 15 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Parme - Cuir Noisette"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/15.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/15.jpeg"
+                                    alt="Chaussure en cuir modèle Parme - Cuir Noisette"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Parme - Cuir Noisette</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 16 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Gênes - Cuir Taupe"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/16.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/16.jpeg"
+                                    alt="Chaussure en cuir modèle Gênes - Cuir Taupe"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Gênes - Cuir Taupe</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 17 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Pise - Cuir Cognac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/17.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/17.jpeg"
+                                    alt="Chaussure en cuir modèle Pise - Cuir Cognac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Pise - Cuir Cognac</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 18 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Ravenne - Cuir Havane"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/18.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/18.jpeg"
+                                    alt="Chaussure en cuir modèle Ravenne - Cuir Havane"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Ravenne - Cuir Havane</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 19 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Padoue - Cuir Anthracite"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/19.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/19.jpeg"
+                                    alt="Chaussure en cuir modèle Padoue - Cuir Anthracite"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Padoue - Cuir Anthracite</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 20 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Vicence - Cuir Chocolat"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/20.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/20.jpeg"
+                                    alt="Chaussure en cuir modèle Vicence - Cuir Chocolat"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Vicence - Cuir Chocolat</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 21 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Andalousie - Cuir Whisky"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/21.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/21.jpeg"
+                                    alt="Chaussure en cuir modèle Andalousie - Cuir Whisky"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Andalousie - Cuir Whisky</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 22 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Séville - Cuir Bordeaux"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/22.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/22.jpeg"
+                                    alt="Chaussure en cuir modèle Séville - Cuir Bordeaux"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Séville - Cuir Bordeaux</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 23 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Grenade - Cuir Noir"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/23.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/23.jpeg"
+                                    alt="Chaussure en cuir modèle Grenade - Cuir Noir"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Grenade - Cuir Noir</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 24 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Cordoue - Cuir Caramel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/24.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/24.jpeg"
+                                    alt="Chaussure en cuir modèle Cordoue - Cuir Caramel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Cordoue - Cuir Caramel</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 25 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Tolède - Cuir Marron"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/25.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/25.jpeg"
+                                    alt="Chaussure en cuir modèle Tolède - Cuir Marron"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Tolède - Cuir Marron</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 26 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Lisbonne - Cuir Châtaigne"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/26.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/26.jpeg"
+                                    alt="Chaussure en cuir modèle Lisbonne - Cuir Châtaigne"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Lisbonne - Cuir Châtaigne</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 27 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Porto - Cuir Bronze"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/27.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/27.jpeg"
+                                    alt="Chaussure en cuir modèle Porto - Cuir Bronze"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Porto - Cuir Bronze</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 28 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Windsor - Cuir Miel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/28.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/28.jpeg"
+                                    alt="Chaussure en cuir modèle Windsor - Cuir Miel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Windsor - Cuir Miel</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 29 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Chelsea - Cuir Cuivre"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/29.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/29.jpeg"
+                                    alt="Chaussure en cuir modèle Chelsea - Cuir Cuivre"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Chelsea - Cuir Cuivre</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 30 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Oxford - Cuir Ivoire"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/30.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/30.jpeg"
+                                    alt="Chaussure en cuir modèle Oxford - Cuir Ivoire"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Oxford - Cuir Ivoire</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 31 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Kensington - Cuir Tabac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/31.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/31.jpeg"
+                                    alt="Chaussure en cuir modèle Kensington - Cuir Tabac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Kensington - Cuir Tabac</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 32 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Mayfair - Cuir Gris Perle"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/32.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/32.jpeg"
+                                    alt="Chaussure en cuir modèle Mayfair - Cuir Gris Perle"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Mayfair - Cuir Gris Perle</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 33 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Belgravia - Cuir Acajou"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/33.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/33.jpeg"
+                                    alt="Chaussure en cuir modèle Belgravia - Cuir Acajou"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Belgravia - Cuir Acajou</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 34 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Marrakech - Cuir Camel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/34.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/34.jpeg"
+                                    alt="Chaussure en cuir modèle Marrakech - Cuir Camel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Marrakech - Cuir Camel</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 35 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Fès - Cuir Sable"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/35.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/35.jpeg"
+                                    alt="Chaussure en cuir modèle Fès - Cuir Sable"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Fès - Cuir Sable</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 36 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Beyrouth - Cuir Ébène"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/36.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/36.jpeg"
+                                    alt="Chaussure en cuir modèle Beyrouth - Cuir Ébène"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Beyrouth - Cuir Ébène</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 37 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Istanbul - Cuir Noisette"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/37.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/37.jpeg"
+                                    alt="Chaussure en cuir modèle Istanbul - Cuir Noisette"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Istanbul - Cuir Noisette</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 38 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Bruges - Cuir Taupe"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/38.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/38.jpeg"
+                                    alt="Chaussure en cuir modèle Bruges - Cuir Taupe"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Bruges - Cuir Taupe</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 39 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Anvers - Cuir Cognac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/39.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/39.jpeg"
+                                    alt="Chaussure en cuir modèle Anvers - Cuir Cognac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Anvers - Cuir Cognac</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 40 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Genève - Cuir Havane"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/40.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/40.jpeg"
+                                    alt="Chaussure en cuir modèle Genève - Cuir Havane"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Genève - Cuir Havane</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 41 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Lausanne - Cuir Anthracite"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/41.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/41.jpeg"
+                                    alt="Chaussure en cuir modèle Lausanne - Cuir Anthracite"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Lausanne - Cuir Anthracite</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 42 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Provence - Cuir Chocolat"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/42.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/42.jpeg"
+                                    alt="Chaussure en cuir modèle Provence - Cuir Chocolat"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Provence - Cuir Chocolat</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 43 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Avignon - Cuir Whisky"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/43.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/43.jpeg"
+                                    alt="Chaussure en cuir modèle Avignon - Cuir Whisky"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Avignon - Cuir Whisky</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 44 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Bordeaux - Cuir Bordeaux"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/44.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/44.jpeg"
+                                    alt="Chaussure en cuir modèle Bordeaux - Cuir Bordeaux"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Bordeaux - Cuir Bordeaux</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 45 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Biarritz - Cuir Noir"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/45.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/45.jpeg"
+                                    alt="Chaussure en cuir modèle Biarritz - Cuir Noir"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Biarritz - Cuir Noir</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 46 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Deauville - Cuir Caramel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/46.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/46.jpeg"
+                                    alt="Chaussure en cuir modèle Deauville - Cuir Caramel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Deauville - Cuir Caramel</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 47 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Chantilly - Cuir Marron"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/47.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/47.jpeg"
+                                    alt="Chaussure en cuir modèle Chantilly - Cuir Marron"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Chantilly - Cuir Marron</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 48 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Versailles - Cuir Châtaigne"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/48.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/48.jpeg"
+                                    alt="Chaussure en cuir modèle Versailles - Cuir Châtaigne"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Versailles - Cuir Châtaigne</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 49 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Montmartre - Cuir Bronze"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/49.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/49.jpeg"
+                                    alt="Chaussure en cuir modèle Montmartre - Cuir Bronze"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Montmartre - Cuir Bronze</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 50 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Saint-Germain - Cuir Miel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/50.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/50.jpeg"
+                                    alt="Chaussure en cuir modèle Saint-Germain - Cuir Miel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Saint-Germain - Cuir Miel</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 51 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Milano - Cuir Cuivre"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/51.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/51.jpeg"
+                                    alt="Chaussure en cuir modèle Milano - Cuir Cuivre"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Milano - Cuir Cuivre</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 52 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Florence - Cuir Ivoire"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/52.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/52.jpeg"
+                                    alt="Chaussure en cuir modèle Florence - Cuir Ivoire"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Florence - Cuir Ivoire</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 53 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Toscane - Cuir Tabac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/53.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/53.jpeg"
+                                    alt="Chaussure en cuir modèle Toscane - Cuir Tabac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Toscane - Cuir Tabac</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 54 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Sienne - Cuir Gris Perle"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/54.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/54.jpeg"
+                                    alt="Chaussure en cuir modèle Sienne - Cuir Gris Perle"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Sienne - Cuir Gris Perle</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 55 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Vérone - Cuir Acajou"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/55.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/55.jpeg"
+                                    alt="Chaussure en cuir modèle Vérone - Cuir Acajou"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Vérone - Cuir Acajou</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 56 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Capri - Cuir Camel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/56.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/56.jpeg"
+                                    alt="Chaussure en cuir modèle Capri - Cuir Camel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Capri - Cuir Camel</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 57 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Portofino - Cuir Sable"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/57.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/57.jpeg"
+                                    alt="Chaussure en cuir modèle Portofino - Cuir Sable"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Portofino - Cuir Sable</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 58 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Amalfi - Cuir Ébène"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/58.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/58.jpeg"
+                                    alt="Chaussure en cuir modèle Amalfi - Cuir Ébène"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Amalfi - Cuir Ébène</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 59 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Côme - Cuir Noisette"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/59.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/59.jpeg"
+                                    alt="Chaussure en cuir modèle Côme - Cuir Noisette"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Côme - Cuir Noisette</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 60 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Venise - Cuir Taupe"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/60.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/60.jpeg"
+                                    alt="Chaussure en cuir modèle Venise - Cuir Taupe"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Venise - Cuir Taupe</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 61 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Naples - Cuir Cognac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/61.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/61.jpeg"
+                                    alt="Chaussure en cuir modèle Naples - Cuir Cognac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Naples - Cuir Cognac</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 62 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Palerme - Cuir Havane"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/62.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/62.jpeg"
+                                    alt="Chaussure en cuir modèle Palerme - Cuir Havane"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Palerme - Cuir Havane</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 63 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Turin - Cuir Anthracite"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/63.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/63.jpeg"
+                                    alt="Chaussure en cuir modèle Turin - Cuir Anthracite"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Turin - Cuir Anthracite</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 64 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Bologne - Cuir Chocolat"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/64.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/64.jpeg"
+                                    alt="Chaussure en cuir modèle Bologne - Cuir Chocolat"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Bologne - Cuir Chocolat</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 65 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Parme - Cuir Whisky"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/65.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/65.jpeg"
+                                    alt="Chaussure en cuir modèle Parme - Cuir Whisky"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Parme - Cuir Whisky</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 66 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Gênes - Cuir Bordeaux"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/66.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/66.jpeg"
+                                    alt="Chaussure en cuir modèle Gênes - Cuir Bordeaux"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Gênes - Cuir Bordeaux</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 67 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Pise - Cuir Noir"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/67.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/67.jpeg"
+                                    alt="Chaussure en cuir modèle Pise - Cuir Noir"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Pise - Cuir Noir</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 68 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Ravenne - Cuir Caramel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/68.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/68.jpeg"
+                                    alt="Chaussure en cuir modèle Ravenne - Cuir Caramel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Ravenne - Cuir Caramel</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 69 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Padoue - Cuir Marron"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/69.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/69.jpeg"
+                                    alt="Chaussure en cuir modèle Padoue - Cuir Marron"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Padoue - Cuir Marron</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 70 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Vicence - Cuir Châtaigne"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/70.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/70.jpeg"
+                                    alt="Chaussure en cuir modèle Vicence - Cuir Châtaigne"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Vicence - Cuir Châtaigne</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 71 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Andalousie - Cuir Bronze"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/71.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/71.jpeg"
+                                    alt="Chaussure en cuir modèle Andalousie - Cuir Bronze"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Andalousie - Cuir Bronze</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 72 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Séville - Cuir Miel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/72.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/72.jpeg"
+                                    alt="Chaussure en cuir modèle Séville - Cuir Miel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Séville - Cuir Miel</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 73 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Grenade - Cuir Cuivre"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/73.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/73.jpeg"
+                                    alt="Chaussure en cuir modèle Grenade - Cuir Cuivre"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Grenade - Cuir Cuivre</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 74 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Cordoue - Cuir Ivoire"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/74.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/74.jpeg"
+                                    alt="Chaussure en cuir modèle Cordoue - Cuir Ivoire"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Cordoue - Cuir Ivoire</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 75 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Tolède - Cuir Tabac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/75.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/75.jpeg"
+                                    alt="Chaussure en cuir modèle Tolède - Cuir Tabac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Tolède - Cuir Tabac</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 76 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Lisbonne - Cuir Gris Perle"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/76.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/76.jpeg"
+                                    alt="Chaussure en cuir modèle Lisbonne - Cuir Gris Perle"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Lisbonne - Cuir Gris Perle</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 77 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Porto - Cuir Acajou"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/77.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/77.jpeg"
+                                    alt="Chaussure en cuir modèle Porto - Cuir Acajou"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Porto - Cuir Acajou</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 78 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Windsor - Cuir Camel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/78.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/78.jpeg"
+                                    alt="Chaussure en cuir modèle Windsor - Cuir Camel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Windsor - Cuir Camel</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 79 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Chelsea - Cuir Sable"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/79.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/79.jpeg"
+                                    alt="Chaussure en cuir modèle Chelsea - Cuir Sable"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Chelsea - Cuir Sable</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 80 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Oxford - Cuir Ébène"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/80.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/80.jpeg"
+                                    alt="Chaussure en cuir modèle Oxford - Cuir Ébène"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Oxford - Cuir Ébène</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 81 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Kensington - Cuir Noisette"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/81.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/81.jpeg"
+                                    alt="Chaussure en cuir modèle Kensington - Cuir Noisette"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Kensington - Cuir Noisette</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 82 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Mayfair - Cuir Taupe"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/82.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/82.jpeg"
+                                    alt="Chaussure en cuir modèle Mayfair - Cuir Taupe"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Mayfair - Cuir Taupe</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 83 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Belgravia - Cuir Cognac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/83.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/83.jpeg"
+                                    alt="Chaussure en cuir modèle Belgravia - Cuir Cognac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Belgravia - Cuir Cognac</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 84 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Marrakech - Cuir Havane"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/84.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/84.jpeg"
+                                    alt="Chaussure en cuir modèle Marrakech - Cuir Havane"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Marrakech - Cuir Havane</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 85 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Fès - Cuir Anthracite"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/85.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/85.jpeg"
+                                    alt="Chaussure en cuir modèle Fès - Cuir Anthracite"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Fès - Cuir Anthracite</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 86 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Beyrouth - Cuir Chocolat"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/86.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/86.jpeg"
+                                    alt="Chaussure en cuir modèle Beyrouth - Cuir Chocolat"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Beyrouth - Cuir Chocolat</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 87 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Istanbul - Cuir Whisky"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/87.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/87.jpeg"
+                                    alt="Chaussure en cuir modèle Istanbul - Cuir Whisky"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Istanbul - Cuir Whisky</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 88 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Bruges - Cuir Bordeaux"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/88.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/88.jpeg"
+                                    alt="Chaussure en cuir modèle Bruges - Cuir Bordeaux"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Bruges - Cuir Bordeaux</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 89 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Anvers - Cuir Noir"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/89.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/89.jpeg"
+                                    alt="Chaussure en cuir modèle Anvers - Cuir Noir"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Anvers - Cuir Noir</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 90 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Genève - Cuir Caramel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/90.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/90.jpeg"
+                                    alt="Chaussure en cuir modèle Genève - Cuir Caramel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Genève - Cuir Caramel</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 91 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Lausanne - Cuir Marron"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/91.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/91.jpeg"
+                                    alt="Chaussure en cuir modèle Lausanne - Cuir Marron"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Lausanne - Cuir Marron</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 92 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Provence - Cuir Châtaigne"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/92.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/92.jpeg"
+                                    alt="Chaussure en cuir modèle Provence - Cuir Châtaigne"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Provence - Cuir Châtaigne</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 93 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Avignon - Cuir Bronze"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/93.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/93.jpeg"
+                                    alt="Chaussure en cuir modèle Avignon - Cuir Bronze"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Avignon - Cuir Bronze</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 94 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Bordeaux - Cuir Miel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/94.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/94.jpeg"
+                                    alt="Chaussure en cuir modèle Bordeaux - Cuir Miel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Bordeaux - Cuir Miel</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 95 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Biarritz - Cuir Cuivre"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/95.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/95.jpeg"
+                                    alt="Chaussure en cuir modèle Biarritz - Cuir Cuivre"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Biarritz - Cuir Cuivre</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 96 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Deauville - Cuir Ivoire"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/96.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/96.jpeg"
+                                    alt="Chaussure en cuir modèle Deauville - Cuir Ivoire"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Deauville - Cuir Ivoire</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 97 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Chantilly - Cuir Tabac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/97.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/97.jpeg"
+                                    alt="Chaussure en cuir modèle Chantilly - Cuir Tabac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Chantilly - Cuir Tabac</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 98 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Versailles - Cuir Gris Perle"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/98.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/98.jpeg"
+                                    alt="Chaussure en cuir modèle Versailles - Cuir Gris Perle"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Versailles - Cuir Gris Perle</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 99 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Montmartre - Cuir Acajou"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/99.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/99.jpeg"
+                                    alt="Chaussure en cuir modèle Montmartre - Cuir Acajou"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Montmartre - Cuir Acajou</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 100 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Saint-Germain - Cuir Camel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/100.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/100.jpeg"
+                                    alt="Chaussure en cuir modèle Saint-Germain - Cuir Camel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Saint-Germain - Cuir Camel</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 101 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Milano - Cuir Sable"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/101.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/101.jpeg"
+                                    alt="Chaussure en cuir modèle Milano - Cuir Sable"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Milano - Cuir Sable</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 102 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Florence - Cuir Ébène"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/102.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/102.jpeg"
+                                    alt="Chaussure en cuir modèle Florence - Cuir Ébène"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Florence - Cuir Ébène</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 103 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Toscane - Cuir Noisette"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/103.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/103.jpeg"
+                                    alt="Chaussure en cuir modèle Toscane - Cuir Noisette"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Toscane - Cuir Noisette</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 104 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Sienne - Cuir Taupe"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/104.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/104.jpeg"
+                                    alt="Chaussure en cuir modèle Sienne - Cuir Taupe"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Sienne - Cuir Taupe</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 105 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Vérone - Cuir Cognac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/105.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/105.jpeg"
+                                    alt="Chaussure en cuir modèle Vérone - Cuir Cognac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Vérone - Cuir Cognac</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 106 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Capri - Cuir Havane"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/106.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/106.jpeg"
+                                    alt="Chaussure en cuir modèle Capri - Cuir Havane"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Capri - Cuir Havane</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 107 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Portofino - Cuir Anthracite"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/107.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/107.jpeg"
+                                    alt="Chaussure en cuir modèle Portofino - Cuir Anthracite"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Portofino - Cuir Anthracite</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 108 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Amalfi - Cuir Chocolat"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/108.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/108.jpeg"
+                                    alt="Chaussure en cuir modèle Amalfi - Cuir Chocolat"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Amalfi - Cuir Chocolat</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 109 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Côme - Cuir Whisky"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/109.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/109.jpeg"
+                                    alt="Chaussure en cuir modèle Côme - Cuir Whisky"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Côme - Cuir Whisky</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 110 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Venise - Cuir Bordeaux"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/110.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/110.jpeg"
+                                    alt="Chaussure en cuir modèle Venise - Cuir Bordeaux"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Venise - Cuir Bordeaux</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 111 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Naples - Cuir Noir"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/111.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/111.jpeg"
+                                    alt="Chaussure en cuir modèle Naples - Cuir Noir"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Naples - Cuir Noir</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 112 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Palerme - Cuir Caramel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/112.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/112.jpeg"
+                                    alt="Chaussure en cuir modèle Palerme - Cuir Caramel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Palerme - Cuir Caramel</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 113 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Turin - Cuir Marron"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/113.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/113.jpeg"
+                                    alt="Chaussure en cuir modèle Turin - Cuir Marron"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Turin - Cuir Marron</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 114 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Bologne - Cuir Châtaigne"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/114.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/114.jpeg"
+                                    alt="Chaussure en cuir modèle Bologne - Cuir Châtaigne"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Bologne - Cuir Châtaigne</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 115 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Parme - Cuir Bronze"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/115.jpeg"
+                            data-price="18 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/115.jpeg"
+                                    alt="Chaussure en cuir modèle Parme - Cuir Bronze"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Parme - Cuir Bronze</h4>
+                                <p class="product-card__price">18 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 116 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Gênes - Cuir Miel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/116.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/116.jpeg"
+                                    alt="Chaussure en cuir modèle Gênes - Cuir Miel"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Gênes - Cuir Miel</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 117 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Pise - Cuir Cuivre"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/117.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/117.jpeg"
+                                    alt="Chaussure en cuir modèle Pise - Cuir Cuivre"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Pise - Cuir Cuivre</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 118 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Ravenne - Cuir Ivoire"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/118.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/118.jpeg"
+                                    alt="Chaussure en cuir modèle Ravenne - Cuir Ivoire"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Ravenne - Cuir Ivoire</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 119 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Padoue - Cuir Tabac"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/119.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/119.jpeg"
+                                    alt="Chaussure en cuir modèle Padoue - Cuir Tabac"
+                                    class="product-card__image"
+                                    loading="lazy"
+                                >
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Padoue - Cuir Tabac</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- BOUTON WHATSAPP -->
+        <a href="https://wa.me/22955749137"
+            class="whatsapp-float"
+            target="_blank"
+            aria-label="Contactez-nous sur WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- SECTION FOOTER (identique à la page d'accueil) -->
+        <footer class="site-footer" role="contentinfo">
+
+            <div class="footer-container">
+
+                <!-- Brand & Description -->
+                <div class="footer-brand">
+                    <h1 class="footer-title" id="footer-brand-title">Eliano Shoes</h1>
+
+                    <p class="footer-description">
+                        Chaussures en cuir fabriquées avec passion, précision et élégance.
+                        Le confort et l'excellence au service de votre style.
+                    </p>
+
+                    <ul class="socials-icons" aria-label="Réseaux sociaux">
+                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+
+                    <div class="footer-origin">
+                        <svg class="footer-origin__ribbon" width="56" height="26" viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Drapeau du Benin stylise, ruban ondulant">
+                            <defs>
+                                <path id="ribbonShape" d="M 0.0,56.3 L 3.3,54.2 L 6.7,52.0 L 10.0,49.7 L 13.3,47.4 L 16.7,45.0 L 20.0,42.6 L 23.3,40.2 L 26.7,37.9 L 30.0,35.7 L 33.3,33.6 L 36.7,31.7 L 40.0,30.0 L 43.3,28.6 L 46.7,27.3 L 50.0,26.3 L 53.3,25.6 L 56.7,25.2 L 60.0,25.0 L 63.3,25.1 L 66.7,25.6 L 70.0,26.3 L 73.3,27.2 L 76.7,28.5 L 80.0,30.0 L 83.3,31.6 L 86.7,33.5 L 90.0,35.6 L 93.3,37.8 L 96.7,40.1 L 100.0,42.4 L 103.3,44.8 L 106.7,47.2 L 110.0,49.6 L 113.3,51.9 L 116.7,54.1 L 120.0,56.2 L 123.3,58.1 L 126.7,59.8 L 130.0,61.3 L 133.3,62.6 L 136.7,63.6 L 140.0,64.4 L 143.3,64.8 L 146.7,65.0 L 150.0,64.9 L 153.3,64.5 L 156.7,63.8 L 160.0,62.8 L 163.3,61.6 L 166.7,60.2 L 170.0,58.5 L 173.3,56.6 L 176.7,54.6 L 180.0,52.4 L 183.3,50.1 L 186.7,47.8 L 190.0,45.4 L 193.3,43.0 L 196.7,40.6 L 200.0,38.3 L 200.0,64.3 L 196.7,66.6 L 193.3,69.0 L 190.0,71.4 L 186.7,73.8 L 183.3,76.1 L 180.0,78.4 L 176.7,80.6 L 173.3,82.6 L 170.0,84.5 L 166.7,86.2 L 163.3,87.6 L 160.0,88.8 L 156.7,89.8 L 153.3,90.5 L 150.0,90.9 L 146.7,91.0 L 143.3,90.8 L 140.0,90.4 L 136.7,89.6 L 133.3,88.6 L 130.0,87.3 L 126.7,85.8 L 123.3,84.1 L 120.0,82.2 L 116.7,80.1 L 113.3,77.9 L 110.0,75.6 L 106.7,73.2 L 103.3,70.8 L 100.0,68.4 L 96.7,66.1 L 93.3,63.8 L 90.0,61.6 L 86.7,59.5 L 83.3,57.6 L 80.0,56.0 L 76.7,54.5 L 73.3,53.2 L 70.0,52.3 L 66.7,51.6 L 63.3,51.1 L 60.0,51.0 L 56.7,51.2 L 53.3,51.6 L 50.0,52.3 L 46.7,53.3 L 43.3,54.6 L 40.0,56.0 L 36.7,57.7 L 33.3,59.6 L 30.0,61.7 L 26.7,63.9 L 23.3,66.2 L 20.0,68.6 L 16.7,71.0 L 13.3,73.4 L 10.0,75.7 L 6.7,78.0 L 3.3,80.2 L 0.0,82.3 Z"/>
+                                <clipPath id="ribbonClip"><use href="#ribbonShape"/></clipPath>
+                                <linearGradient id="ribbonSheen" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/>
+                                    <stop offset="0.45" stop-color="#ffffff" stop-opacity="0"/>
+                                    <stop offset="1" stop-color="#000000" stop-opacity="0.22"/>
+                                </linearGradient>
+                            </defs>
+                            <g clip-path="url(#ribbonClip)">
+                                <rect x="0" y="0" width="60.0" height="90" fill="#0A7B3E"/>
+                                <rect x="60.0" y="0" width="140.0" height="45.0" fill="#FCD116"/>
+                                <rect x="60.0" y="45.0" width="140.0" height="45.0" fill="#CE1126"/>
+                                <rect x="0" y="0" width="200" height="90" fill="url(#ribbonSheen)"/>
+                            </g>
+                            <use href="#ribbonShape" fill="none" stroke="rgba(20,12,8,0.3)" stroke-width="1.4"/>
+                        </svg>
+                        <span class="footer-origin__text">Fabriqu&eacute; avec fiert&eacute; au B&eacute;nin</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <nav class="footer-links" aria-labelledby="footer-links-title">
+                    <h2 class="footer-heading" id="footer-links-title">Liens rapides</h2>
+
+                    <ul class="footer-list">
+                        <li><a href="index.html#hero">Accueil</a></li>
+                        <li><a href="index.html#collection">Collection</a></li>
+                        <li><a href="boutique.html">Boutique</a></li>
+                        <li><a href="index.html#best-seller">Meilleure vente</a></li>
+                        <li><a href="index.html#temoignages">Témoignages</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Help & Info -->
+                <nav class="footer-help" aria-labelledby="footer-help-title">
+                    <h2 class="footer-heading" id="footer-help-title">Aide &amp; Infos</h2>
+
+                    <ul class="footer-list">
+                        <li><a href="https://wa.me/22955749137" target="_blank">Suivre ma commande</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">Livraison</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">Retours &amp; échanges</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">Écrivez-nous</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contact Information -->
+                <div class="footer-contact" aria-labelledby="footer-contact-title">
+                    <h2 class="footer-heading" id="footer-contact-title">Contact</h2>
+
+                    <p class="footer-contact-text">Une question ou une suggestion ?</p>
+                    <a href="mailto:contact@elianoshoes.com" class="footer-contact-value">contact@elianoshoes.com</a>
+
+                    <p class="footer-contact-text footer-contact-text--spaced">Besoin d'assistance ? Appelez-nous.</p>
+                    <a href="tel:+22955749137" class="footer-contact-value">+229 55 74 91 37</a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="year"></span> Eliano Shoes · Tous droits réservés.
+                </p>
+                <p class="footer-credit">
+                    Développé par <a href="https://dskportfolio.onrender.com" target="_blank">Dias SARE KPERA</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- ===============================
+            JAVASCRIPT
+        =============================== -->
+        <script src="./js/01-global/fixed-header.js"></script>
+        <script src="./js/01-global/reveal.js"></script>
+        <script src="./js/01-global/wa-message.js"></script>
+        <script src="./js/01-global/footer-years.js"></script>
+
+        <script src="./js/02-home/overlay-menu.js"></script>
+    </body>
+</html>

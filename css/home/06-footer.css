@@ -1,0 +1,266 @@
+/* =========================================
+   FOOTER - STRUCTURE ÉPURÉE 4 COLONNES
+========================================= */
+
+.site-footer {
+    width: 100%;
+    padding: 100px 3rem 40px;
+
+    background: #14100C;
+    color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+/* ===========================
+   FOOTER GRID
+=========================== */
+
+.footer-container {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+/* ===========================
+   BRAND
+=========================== */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-description {
+    line-height: 1.7;
+    color: rgba(245, 245, 245, 0.55);
+    font-size: 0.92rem;
+    max-width: 320px;
+}
+
+.socials-icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 4px;
+}
+
+.socials-icons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(245, 245, 245, 0.45);
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+.socials-icons li a:hover {
+    color: #C9843C;
+}
+
+/* ===========================
+   ORIGIN BADGE (Fabriqué au Bénin)
+=========================== */
+
+.footer-origin {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 6px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(245, 245, 245, 0.1);
+}
+
+.footer-origin__ribbon {
+    flex-shrink: 0;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+}
+
+.footer-origin__text {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    color: rgba(245, 245, 245, 0.65);
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+.footer-heading {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+/* ===========================
+   LINK COLUMNS
+=========================== */
+
+.footer-links,
+.footer-help {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-list a {
+    color: rgba(245, 245, 245, 0.55);
+    text-decoration: none;
+    font-size: 0.92rem;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact-text {
+    font-size: 0.88rem;
+    color: rgba(245, 245, 245, 0.5);
+    margin-bottom: 6px;
+}
+
+.footer-contact-text--spaced {
+    margin-top: 22px;
+}
+
+.footer-contact-value {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-value:hover {
+    color: #C9843C;
+}
+
+/* ===========================
+   BOTTOM LINE
+=========================== */
+
+.footer-bottom {
+    max-width: 1350px;
+    margin: 70px auto 0;
+    padding-top: 28px;
+    border-top: 1px solid rgba(245, 245, 245, 0.1);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-copyright,
+.footer-credit {
+    font-size: 0.85rem;
+    color: rgba(245, 245, 245, 0.4);
+}
+
+.footer-credit a {
+    color: rgba(245, 245, 245, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+    color: #ffffff;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+    .site-footer {
+        padding: 80px 2.5rem 35px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px 40px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-footer {
+        padding: 70px 1.5rem 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        align-items: center;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+
+    .footer-links,
+    .footer-help,
+    .footer-contact {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        margin-top: 55px;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.6rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer-title {
+        font-size: 1.6rem;
+    }
+
+    .footer-description {
+        font-size: 0.88rem;
+    }
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Charset -->
+        <meta charset="UTF-8">
+    
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- SEO -->
+        <title>Eliano Shoes - Chaussures en cuir premium, élégantes et artisanales</title>
+        <meta name="description" content="Découvrez les chaussures en cuir premium Eliano Shoes. Fabrication artisanale, élégance moderne et confort durable. Modèles pour hommes et femmes.">
+        <meta name="google-site-verification" content="ugCb6VMAhUXQPPWYkNWNcJ9nA95f7R89IE8ldmZ-fjg" />
+
+        <!-- Keywords (optionnel mais propre) -->
+        <meta name="keywords" content="chaussures cuir, chaussures artisanales, cuir premium, chaussures élégantes, Eliano Shoes, mode homme, mode femme">
+    
+        <!-- FAVICON -->
+        <link rel="icon" type="image/png" href="./assets/icons/favicon/favicon.ico">
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome (icônes) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- Stylesheet principal -->
+        <link rel="stylesheet" href="./css/home/main.css">
+    
+        <!-- Open Graph (réseaux sociaux) -->
+        <meta property="og:title" content="Eliano Shoes - Chaussures en cuir premium">
+        <meta property="og:description" content="Élégance. Confort. Artisanat. Découvrez nos collections en cuir premium.">
+        <meta property="og:image" content="./assets/icons/logo.jpeg">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://elianoshoes.onrender.com">
+    
+        <!-- Couleur principale mobile -->
+        <meta name="theme-color" content="#000000">
+    </head>    
+    <body>
+        <!-- HEADER (hors de .hero pour ne pas être piégé dans son contexte d'empilement) -->
+        <header class="hero__header">
+            <div class="hero__logo">
+                <a href="#hero" class="hero__brand">
+                    <svg class="brand-needle" viewBox="0 0 26 58" width="20" height="44" aria-hidden="true" focusable="false">
+                        <rect x="11.9" y="5" width="2.2" height="39" rx="1.1" fill="#eeeae1"/>
+                        <path d="M11.9 42 L14.1 42 L13 56 Z" fill="#eeeae1"/>
+                        <ellipse cx="13" cy="10.5" rx="0.9" ry="2.3" fill="none" stroke="#3a2416" stroke-width="1"/>
+                        <path class="brand-needle__thread" d="M11.9 10.8 C5 12.5 2.2 20 6.5 25.5 C10.8 31 2 35 3 42.5 C3.7 48 9 50.5 13 48" fill="none" stroke="#A05A2C" stroke-width="1.6" stroke-linecap="round"/>
+                        <circle cx="13" cy="48" r="1.4" fill="#A05A2C"/>
+                    </svg>
+                    <span>Eliano Shoes</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hero__nav" aria-label="Navigation principale">
+                <ul class="hero__menu">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="#best-seller">Meilleure vente</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="https://wa.me/22955749137" target="_blank">Écrivez-nous</a></li>
+                </ul>
+            </nav>
+
+            <!-- Social Links -->
+            <ul class="hero__socials" aria-label="Réseaux sociaux">
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="hero__burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <!-- MOBILE NAV (hors de .hero également) -->
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Menu mobile">
+            <ul class="mobile-nav__menu">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="#best-seller">Meilleure vente</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="https://wa.me/22955749137" target="_blank">Écrivez-nous</a></li>
+            </ul>
+            <!-- Social Links -->
+            <ul class="hero__socials" aria-label="Réseaux sociaux">
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- SECTION HERO -->
+        <section class="hero" id="hero" role="region" aria-labelledby="hero-title">
+
+            <!-- HERO CONTENT -->
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title" id="hero-title">
+                        Marchez avec<br>
+                        distinction
+                    </h1>
+        
+                    <div class="hero__cta">
+                        <a href="#collection" class="btn btn--primary">Voir la collection</a>
+                    </div>
+                </div>
+        
+                <figure class="hero__image">
+                    <img 
+                        src="./assets/images/mockup.png" 
+                        alt="Chaussure en cuir premium confectionnée par Eliano Shoes"
+                    >
+                </figure>
+            </div>
+        
+        </section>
+
+        <!-- SECTION AVANTAGES -->
+        <section class="avantages reveal-section" id="avantages" aria-label="Nos engagements">
+            <div class="avantages__grid" role="list">
+
+                <article class="avantage" role="listitem">
+                    <i class="fa-solid fa-truck-fast avantage__icon" aria-hidden="true"></i>
+                    <h3 class="avantage__title">Livraison Rapide</h3>
+                    <p class="avantage__text">Partout à Cotonou et ses environs, sous 48h.</p>
+                </article>
+
+                <article class="avantage" role="listitem">
+                    <i class="fa-solid fa-award avantage__icon" aria-hidden="true"></i>
+                    <h3 class="avantage__title">Qualité Garantie</h3>
+                    <p class="avantage__text">Cuir sélectionné, contrôlé à chaque étape.</p>
+                </article>
+
+                <article class="avantage" role="listitem">
+                    <i class="fa-solid fa-tag avantage__icon" aria-hidden="true"></i>
+                    <h3 class="avantage__title">Offres Exclusives</h3>
+                    <p class="avantage__text">Des réductions régulières réservées à nos clients.</p>
+                </article>
+
+                <article class="avantage" role="listitem">
+                    <i class="fa-solid fa-shield-halved avantage__icon" aria-hidden="true"></i>
+                    <h3 class="avantage__title">Paiement Sécurisé</h3>
+                    <p class="avantage__text">Commandez en toute confiance, à la livraison.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECTION COLLECTION -->
+        <section class="collection " id="collection" role="region" aria-label="Collection">
+
+            <!-- CONTENT -->
+            <div class="collection__content">
+
+                <!-- HEADER DE SECTION : titre à gauche / lien boutique à droite -->
+                <div class="collection__header">
+                    <h2 class="collection__title">Notre Collection</h2>
+                    <a href="boutique.html" class="collection__link">Aller à la boutique</a>
+                </div>
+
+                <!-- ===== CATÉGORIE 1 ===== -->
+                <section class="collection-category" aria-label="Produits">
+        
+                    <div class="collection-category__grid" role="list">
+
+                        <!-- CARD 1 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Milano - Cuir Noir"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/1.jpeg"
+                            data-price="14 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/1.jpeg"
+                                    alt="Chaussure en cuir modèle Milano - Cuir Noir"
+                                    class="product-card__image"
+                                >
+                            
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Milano - Cuir Noir</h4>
+                                <p class="product-card__price">14 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 2 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Florence - Cuir Caramel"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/2.jpeg"
+                            data-price="15 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/2.jpeg"
+                                    alt="Chaussure en cuir modèle Florence - Cuir Caramel"
+                                    class="product-card__image"
+                                >
+                            
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Florence - Cuir Caramel</h4>
+                                <p class="product-card__price">15 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 3 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Toscane - Cuir Marron"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/3.jpeg"
+                            data-price="16 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/3.jpeg"
+                                    alt="Chaussure en cuir modèle Toscane - Cuir Marron"
+                                    class="product-card__image"
+                                >
+                            
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Toscane - Cuir Marron</h4>
+                                <p class="product-card__price">16 000 FCFA</p>
+                            </div>
+                        </article>
+
+                        <!-- CARD 4 -->
+                        <article
+                            class="product-card"
+                            role="listitem"
+                            data-name="Sienne - Cuir Châtaigne"
+                            data-image="https://elianoshoes.onrender.com/assets/image/Shoes/4.jpeg"
+                            data-price="17 000 FCFA"
+                            >
+                            <figure class="product-card__image-wrapper">
+                                <img
+                                    src="./assets/images/shoes/4.jpeg"
+                                    alt="Chaussure en cuir modèle Sienne - Cuir Châtaigne"
+                                    class="product-card__image"
+                                >
+                            
+                                <button type="button" class="product-card__order-btn">
+                                    Commander <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                                </button>
+                            </figure>
+
+                            <div class="product-card__info">
+                                <h4 class="product-card__name">Sienne - Cuir Châtaigne</h4>
+                                <p class="product-card__price">17 000 FCFA</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+            </div>
+        
+        </section>
+
+        <!-- SECTION BEST SELLER -->
+        <section class="best-seller reveal-section" id="best-seller" role="region" aria-labelledby="best-seller-title">
+
+            <div class="best-seller__text reveal-card">
+                <p class="best-seller__subtitle">Meilleure Vente</p>
+
+                <h1 class="best-seller__title" id="best-seller-title">
+                    Notre modèle<br>le plus apprécié
+                </h1>
+
+                <p class="best-seller__meta">Sienne - Cuir Châtaigne · 17 000 FCFA</p>
+
+                <a
+                    href="https://wa.me/22955749137"
+                    target="_blank"
+                    class="best-seller__cta"
+                    data-name="Sienne - Cuir Châtaigne"
+                    data-image="https://elianoshoes.onrender.com/assets/image/Shoes/4.jpeg"
+                    data-price="17 000 FCFA"
+                    >
+                    Commander maintenant
+                </a>
+            </div>
+
+            <figure class="best-seller__image-wrapper reveal-card">
+                <img 
+                    src="./assets/images/shoes/4.jpeg" 
+                    alt="Chaussure cuir modèle best-seller Sienne - Cuir Châtaigne" 
+                    class="best-seller-image"
+                >
+            </figure>
+
+        </section>
+
+        <!-- SECTION TEMOIGNAGES -->
+        <section class="testimonials reveal-section" id="temoignages" role="region" aria-labelledby="testimonials-title">
+
+            <div class="testimonials__frame">
+
+                <span class="testimonials__quote-mark" aria-hidden="true">&#8221;</span>
+
+                <h2 class="testimonials__title reveal-header" id="testimonials-title">Ce qu'ils en disent</h2>
+
+                <div class="testimonials__carousel">
+
+                    <div class="testimonials__content reveal-card">
+                        <p class="testimonials__text" id="testimonial-text">
+                            « Un cuir magnifique et une finition impeccable. Chaque paire Eliano Shoes se porte comme une seconde peau, avec une élégance qui ne passe jamais inaperçue. »
+                        </p>
+                        <div class="testimonials__rating" id="testimonial-rating" aria-label="Note 5 sur 5">★★★★★</div>
+                        <p class="testimonials__author" id="testimonial-author">Kevin Adjovi</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOUTON WHATSAPP-->
+        <a href="https://wa.me/22955749137"
+            class="whatsapp-float" 
+            target="_blank" 
+            aria-label="Contactez-nous sur WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- SECTION FOOTER -->
+        <footer class="site-footer" role="contentinfo">
+
+            <div class="footer-container">
+
+                <!-- Brand & Description -->
+                <div class="footer-brand">
+                    <h1 class="footer-title" id="footer-brand-title">Eliano Shoes</h1>
+
+                    <p class="footer-description">
+                        Chaussures en cuir fabriquées avec passion, précision et élégance.
+                        Le confort et l'excellence au service de votre style.
+                    </p>
+
+                    <ul class="socials-icons" aria-label="Réseaux sociaux">
+                        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+
+                    <div class="footer-origin">
+                        <svg class="footer-origin__ribbon" width="56" height="26" viewBox="0 0 200 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Drapeau du Benin stylise, ruban ondulant">
+                            <defs>
+                                <path id="ribbonShape" d="M 0.0,56.3 L 3.3,54.2 L 6.7,52.0 L 10.0,49.7 L 13.3,47.4 L 16.7,45.0 L 20.0,42.6 L 23.3,40.2 L 26.7,37.9 L 30.0,35.7 L 33.3,33.6 L 36.7,31.7 L 40.0,30.0 L 43.3,28.6 L 46.7,27.3 L 50.0,26.3 L 53.3,25.6 L 56.7,25.2 L 60.0,25.0 L 63.3,25.1 L 66.7,25.6 L 70.0,26.3 L 73.3,27.2 L 76.7,28.5 L 80.0,30.0 L 83.3,31.6 L 86.7,33.5 L 90.0,35.6 L 93.3,37.8 L 96.7,40.1 L 100.0,42.4 L 103.3,44.8 L 106.7,47.2 L 110.0,49.6 L 113.3,51.9 L 116.7,54.1 L 120.0,56.2 L 123.3,58.1 L 126.7,59.8 L 130.0,61.3 L 133.3,62.6 L 136.7,63.6 L 140.0,64.4 L 143.3,64.8 L 146.7,65.0 L 150.0,64.9 L 153.3,64.5 L 156.7,63.8 L 160.0,62.8 L 163.3,61.6 L 166.7,60.2 L 170.0,58.5 L 173.3,56.6 L 176.7,54.6 L 180.0,52.4 L 183.3,50.1 L 186.7,47.8 L 190.0,45.4 L 193.3,43.0 L 196.7,40.6 L 200.0,38.3 L 200.0,64.3 L 196.7,66.6 L 193.3,69.0 L 190.0,71.4 L 186.7,73.8 L 183.3,76.1 L 180.0,78.4 L 176.7,80.6 L 173.3,82.6 L 170.0,84.5 L 166.7,86.2 L 163.3,87.6 L 160.0,88.8 L 156.7,89.8 L 153.3,90.5 L 150.0,90.9 L 146.7,91.0 L 143.3,90.8 L 140.0,90.4 L 136.7,89.6 L 133.3,88.6 L 130.0,87.3 L 126.7,85.8 L 123.3,84.1 L 120.0,82.2 L 116.7,80.1 L 113.3,77.9 L 110.0,75.6 L 106.7,73.2 L 103.3,70.8 L 100.0,68.4 L 96.7,66.1 L 93.3,63.8 L 90.0,61.6 L 86.7,59.5 L 83.3,57.6 L 80.0,56.0 L 76.7,54.5 L 73.3,53.2 L 70.0,52.3 L 66.7,51.6 L 63.3,51.1 L 60.0,51.0 L 56.7,51.2 L 53.3,51.6 L 50.0,52.3 L 46.7,53.3 L 43.3,54.6 L 40.0,56.0 L 36.7,57.7 L 33.3,59.6 L 30.0,61.7 L 26.7,63.9 L 23.3,66.2 L 20.0,68.6 L 16.7,71.0 L 13.3,73.4 L 10.0,75.7 L 6.7,78.0 L 3.3,80.2 L 0.0,82.3 Z"/>
+                                <clipPath id="ribbonClip"><use href="#ribbonShape"/></clipPath>
+                                <linearGradient id="ribbonSheen" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/>
+                                    <stop offset="0.45" stop-color="#ffffff" stop-opacity="0"/>
+                                    <stop offset="1" stop-color="#000000" stop-opacity="0.22"/>
+                                </linearGradient>
+                            </defs>
+                            <g clip-path="url(#ribbonClip)">
+                                <rect x="0" y="0" width="60.0" height="90" fill="#0A7B3E"/>
+                                <rect x="60.0" y="0" width="140.0" height="45.0" fill="#FCD116"/>
+                                <rect x="60.0" y="45.0" width="140.0" height="45.0" fill="#CE1126"/>
+                                <rect x="0" y="0" width="200" height="90" fill="url(#ribbonSheen)"/>
+                            </g>
+                            <use href="#ribbonShape" fill="none" stroke="rgba(20,12,8,0.3)" stroke-width="1.4"/>
+                        </svg>
+                        <span class="footer-origin__text">Fabriqu&eacute; avec fiert&eacute; au B&eacute;nin</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <nav class="footer-links" aria-labelledby="footer-links-title">
+                    <h2 class="footer-heading" id="footer-links-title">Liens rapides</h2>
+
+                    <ul class="footer-list">
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="boutique.html">Boutique</a></li>
+                        <li><a href="#best-seller">Meilleure vente</a></li>
+                        <li><a href="#temoignages">Témoignages</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Help & Info -->
+                <nav class="footer-help" aria-labelledby="footer-help-title">
+                    <h2 class="footer-heading" id="footer-help-title">Aide &amp; Infos</h2>
+
+                    <ul class="footer-list">
+                        <li><a href="https://wa.me/22955749137" target="_blank">Suivre ma commande</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">Livraison</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">Retours &amp; échanges</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">Écrivez-nous</a></li>
+                        <li><a href="https://wa.me/22955749137" target="_blank">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Contact Information -->
+                <div class="footer-contact" aria-labelledby="footer-contact-title">
+                    <h2 class="footer-heading" id="footer-contact-title">Contact</h2>
+
+                    <p class="footer-contact-text">Une question ou une suggestion ?</p>
+                    <a href="mailto:contact@elianoshoes.com" class="footer-contact-value">contact@elianoshoes.com</a>
+
+                    <p class="footer-contact-text footer-contact-text--spaced">Besoin d'assistance ? Appelez-nous.</p>
+                    <a href="tel:+22955749137" class="footer-contact-value">+229 55 74 91 37</a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; <span id="year"></span> Eliano Shoes · Tous droits réservés.
+                </p>
+                <p class="footer-credit">
+                    Développé par <a href="https://dskportfolio.onrender.com" target="_blank">Dias SARE KPERA</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- ===============================
+            JAVASCRIPT
+        =============================== -->
+		<script src="./js/01-global/fixed-header.js"></script>
+		<script src="./js/01-global/reveal.js"></script>
+		<script src="./js/01-global/wa-message.js"></script>
+        <script src="./js/01-global/footer-years.js"></script>
+
+		<script src="./js/02-home/overlay-menu.js"></script>
+		<script src="./js/02-home/testimonials.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
