@@ -200,10 +200,11 @@
 }
 
 .product-card__price {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #A05A2C;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Source Sans 3', sans-serif;
+    letter-spacing: 0.2px;
     white-space: nowrap;
 }
 
@@ -323,7 +324,7 @@
     }
 
     .product-card__price {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
 }
 
