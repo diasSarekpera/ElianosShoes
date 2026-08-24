@@ -107,7 +107,7 @@ h1, h2, h3, h4 {
    logo se réduisent ensemble : c'est cette double variation qui
    donne l'impression nette de "rétractation" du header, plutôt
    qu'un simple changement de fond peu perceptible. */
-.hero__header--scrolled {
+.hero__header.hero__header--scrolled {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     background:
