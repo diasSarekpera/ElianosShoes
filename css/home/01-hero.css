@@ -482,49 +482,80 @@ body.nav-open {
     }
 }
 
+/* -------------------------------------------------- */
+/*        MOBILE : image en grand sous le header,     */
+/*        titre qui suit, CTA ancré en bas de l'écran */
+/*        (le tout tient dans la hauteur visible)     */
+/* -------------------------------------------------- */
+
 /* 992px */
 @media (max-width: 992px) {
     .hero {
-        padding: calc(1rem + var(--header-h, 84px)) 2rem 1rem;
+        padding: calc(0.9rem + var(--header-h, 84px)) 2rem 1.4rem;
     }
     .hero__header {
-        padding: 1.4rem 2rem;
+        padding: 1.7rem 1.85rem;
     }
 
     .hero__content {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         text-align: center;
-        gap: 1.5rem;
+        height: 100%;
+        width: 100%;
         padding: 0;
         margin-top: 0;
+        /* Espace entre l'image et le titre. Le bouton, lui, est poussé
+           tout en bas via margin-top: auto (voir .hero__cta) : il ne
+           dépend pas de ce gap. */
+        gap: clamp(1.4rem, 4.5vh, 2.4rem);
     }
 
+    /* On "déplie" le bloc texte : le titre et le CTA deviennent des
+       enfants directs de .hero__content. Cela permet de les ordonner
+       (order) et d'ancrer le bouton en bas (margin-top: auto)
+       indépendamment du titre, au lieu d'être figés dans un seul bloc
+       centré comme avant. */
     .hero__text {
-        max-width: 100%;
-        align-items: center;
-        gap: 1rem;
+        display: contents;
     }
 
     .hero__image {
-        /* Ne doit plus s'étirer pour remplir l'espace vertical (flex:1
-           venait du style desktop) : sinon la figure grandit et pousse
-           le titre/bouton vers le bas avec un grand vide. */
+        order: 1;
         flex: none;
         max-width: 100%;
+        margin: 0 auto;
     }
 
     .hero__title {
-        font-size: 3.4rem;
+        order: 2;
+        font-size: 3.6rem;
         line-height: 1.15;
-    }
-
-    .hero__image img {
-        max-width: 340px;
-        max-height: 28vh;
+        margin: 0;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.85s ease forwards;
+        animation-delay: 0.1s;
     }
 
     .hero__cta {
-        margin-top: 0.4rem;
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* Ancre le bouton en bas de l'espace disponible */
+        margin-top: auto;
+        padding-top: clamp(1rem, 5vh, 2rem);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.85s ease forwards;
+        animation-delay: 0.35s;
+    }
+
+    .hero__image img {
+        max-width: 380px;
+        max-height: 36dvh;
     }
 }
 
@@ -544,7 +575,8 @@ body.nav-open {
     }
 
     .hero__image img {
-        max-width: 300px;
+        max-width: 320px;
+        max-height: 34dvh;
     }
 }
 
@@ -553,34 +585,34 @@ body.nav-open {
     .hero {
         background-size: 46px 46px;
         background-position: 0 0, 23px 23px;
+        padding: calc(0.8rem + var(--header-h, 80px)) 1.6rem 1.2rem;
+    }
+
+    .hero__header {
+        padding: 1.55rem 1.6rem;
     }
 
     .hero__content {
-        margin-top: 0;
-        gap: 1.1rem;
+        gap: clamp(1.1rem, 4vh, 1.8rem);
     }
 
     .hero__title {
-        font-size: 2.4rem;
-        line-height: 1.15;
-    }
-
-    .hero__text {
-        gap: 0.7rem;
+        font-size: 2.7rem;
+        line-height: 1.18;
     }
 
     .hero__image img {
-        max-width: 220px;
-        max-height: 24vh;
+        max-width: 260px;
+        max-height: 32dvh;
     }
 
     .hero__cta {
-        margin-top: 0.2rem;
+        padding-top: clamp(0.9rem, 4vh, 1.6rem);
     }
 
     .btn {
-        padding: 0.50rem 1.5rem;
-        font-size: 0.85rem;
+        padding: 0.75rem 2rem;
+        font-size: 0.95rem;
         border-radius: 0;
         letter-spacing: 0.5px;
         text-decoration: none;
@@ -603,32 +635,37 @@ body.nav-open {
 }
 
 
-/* 480px - petits écrans (iPhone SE et similaires) : on resserre encore
-   pour être certain que l'image, le titre et le bouton CTA tiennent
-   tous ensemble sans avoir à scroller. */
+/* 480px - petits écrans (iPhone SE et similaires) : la chaussure reste
+   imposante et un vrai espace sépare les éléments, tout en gardant
+   l'ensemble visible sans avoir à scroller. */
 @media (max-width: 480px) {
     .hero {
-        padding: calc(0.6rem + var(--header-h, 80px)) 1.2rem 0.6rem;
+        padding: calc(0.6rem + var(--header-h, 76px)) 1.2rem 0.9rem;
+    }
+
+    .hero__header {
+        padding: 1.4rem 1.35rem;
     }
 
     .hero__content {
-        gap: 0.8rem;
-    }
-
-    .hero__text {
-        gap: 0.5rem;
+        gap: clamp(0.9rem, 3.5vh, 1.4rem);
     }
 
     .hero__title {
-        font-size: 2rem;
+        font-size: 2.15rem;
     }
 
     .hero__image img {
-        max-width: 170px;
-        max-height: 20vh;
+        max-width: 210px;
+        max-height: 28dvh;
     }
 
     .hero__cta {
-        margin-top: 0.1rem;
+        padding-top: clamp(0.7rem, 3.5vh, 1.2rem);
+    }
+
+    .btn {
+        padding: 0.65rem 1.7rem;
+        font-size: 0.88rem;
     }
 }
