@@ -100,10 +100,13 @@ h1, h2, h3, h4 {
 
 /* Etat "scrolle" : header nettement plus opaque et profond,
    quasi solide (comme sur les sites pro), pour un rendu premium
-   au lieu de l'effet "verre trop transparent". */
+   au lieu de l'effet "verre trop transparent". Le padding ET le
+   logo se réduisent ensemble : c'est cette double variation qui
+   donne l'impression nette de "rétractation" du header, plutôt
+   qu'un simple changement de fond peu perceptible. */
 .hero__header--scrolled {
-    padding-top: 0.9rem;
-    padding-bottom: 0.9rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     background:
         linear-gradient(180deg, rgba(38, 22, 14, 0.97), rgba(30, 17, 10, 0.97)),
         linear-gradient(180deg, rgba(238, 234, 225, 0.05), rgba(238, 234, 225, 0.02));
@@ -111,6 +114,14 @@ h1, h2, h3, h4 {
     -webkit-backdrop-filter: blur(14px) saturate(1.1);
     border-bottom: 1px solid rgba(160, 90, 44, 0.4);
     box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.hero__header--scrolled .hero__brand {
+    font-size: 1.55rem;
+}
+
+.hero__header--scrolled .brand-needle {
+    transform: rotate(-8deg) scale(0.85);
 }
 
 .hero__brand {
@@ -124,7 +135,7 @@ h1, h2, h3, h4 {
     text-transform: capitalize;
     letter-spacing: 1px;
     text-decoration: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
 }
 
 .hero__brand:hover {
@@ -138,7 +149,7 @@ h1, h2, h3, h4 {
     flex-shrink: 0;
     overflow: visible;
     transform: rotate(-8deg);
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .hero__brand:hover .brand-needle {
