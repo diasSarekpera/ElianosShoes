@@ -13,12 +13,24 @@
   align-items: center;
   font-size: 28px;
   z-index: 9999;
-  transition: all 0.3s ease;
+
+  /* Caché au chargement : n'apparaît qu'au scroll (voir wa-message.js) */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  transition: opacity 0.45s ease, transform 0.45s ease, visibility 0.45s, background 0.3s ease;
+}
+
+.whatsapp-float.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
   background: #1EBE57;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 /* Effet de pulsation subtile */

@@ -369,10 +369,10 @@ body.nav-open {
 }
 
 .btn {
-    padding: 0.85rem 2.3rem;
-    font-size: 1rem;
-    border-radius: 0;
-    letter-spacing: 0.5px;
+    padding: 1.15rem 3.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -380,10 +380,13 @@ body.nav-open {
 .btn--primary {
     background: #e51710;
     color: #fff;
+    box-shadow: 0 14px 32px -12px rgba(229, 23, 16, 0.55);
 }
 
 .btn--primary:hover {
     background: #ff2c24;
+    transform: translateY(-2px);
+    box-shadow: 0 18px 38px -12px rgba(229, 23, 16, 0.65);
 }
 
 .btn--secondary {
@@ -603,10 +606,10 @@ body.nav-open {
     }
 
     .btn {
-        padding: 0.75rem 2rem;
-        font-size: 0.95rem;
-        border-radius: 0;
-        letter-spacing: 0.5px;
+        padding: 1rem 2.6rem;
+        font-size: 1.02rem;
+        font-weight: 600;
+        letter-spacing: 0.6px;
         text-decoration: none;
         transition: all 0.3s ease;
     }
@@ -614,6 +617,7 @@ body.nav-open {
     .btn--primary {
         background: #e51710;
         color: #fff;
+        box-shadow: 0 12px 26px -10px rgba(229, 23, 16, 0.55);
     }
     
     .btn--primary:hover {
@@ -653,7 +657,8 @@ body.nav-open {
     }
 
     .btn {
-        padding: 0.65rem 1.7rem;
-        font-size: 0.88rem;
+        padding: 0.9rem 2.3rem;
+        font-size: 0.95rem;
+        font-weight: 600;
     }
 }
