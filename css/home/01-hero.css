@@ -20,7 +20,13 @@ h1, h2, h3, h4 {
 .hero {
     width: 100%;
     min-height: 100vh;
-    min-height: 100dvh; /* tient compte de la barre d'adresse mobile */
+    /* svh (small viewport height) plutôt que dvh : dvh se recalcule en
+       direct pendant le scroll (quand la barre d'adresse du navigateur
+       se cache/réapparaît), ce qui faisait "sauter" toute la section
+       hero, et avec elle le mockup de la chaussure. svh reste fixe sur
+       la plus petite hauteur possible, donc plus aucun recalcul en
+       cours de scroll. */
+    min-height: 100svh;
     padding: calc(2rem + var(--header-h, 90px)) 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -406,6 +412,22 @@ body.nav-open {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Icône empreintes de pas : écho discret au titre "Marchez avec
+   distinction" et à l'univers du soulier, plus parlante qu'une simple
+   flèche générique. Elle glisse légèrement vers la droite au survol,
+   comme une invitation à avancer vers la collection. */
+.btn__icon {
+    font-size: 0.95em;
+    transition: transform 0.3s ease;
+}
+
+.btn--primary:hover .btn__icon {
+    transform: translateX(4px);
 }
 
 /* Dégradé "cuir" inspiré du mocassin : oxblood profond -> cognac vif,
